@@ -13,5 +13,6 @@ return array(
     'DB_USER'=>'admin',
     'DB_PWD'=>'123456',
     'DB_PORT'=>'3306',
+    'DB_PREFIX'  => 'home_',
 );
 ?>

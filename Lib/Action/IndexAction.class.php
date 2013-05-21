@@ -68,7 +68,7 @@ class IndexAction extends Action {
         if(strtolower(trim($checkcode)) != strtolower($_SESSION['randcode'])){
             $this->redirect("/index/regindex/error/2/");
         }
-        $m = M("home_user");
+        $m = M("user");
         $rs = $m->getByName($name);
         if(isset($rs) && isset($rs['uid'])){
             $this->redirect("/index/regindex/error/3/");
